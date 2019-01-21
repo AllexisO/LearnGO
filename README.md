@@ -31,10 +31,10 @@ Every line of code can have different scope depending on their position in a GO 
 ```go
 package main
 
-inport "fmt"  ---> file scoped (only visible in this file)
+inport "fmt"  -> file scoped (only visible in this file)
 
-const ok = true ---> package scoped (visible to all the files belong to the package). Other packages can't see then.
-func main () {---> 
+const ok = true -> package scoped (visible to all the files belong to the package). Other packages can't see then.
+func main () {-> 
 ```
 *Declorations*
 Declares a unique name bound to a scope.
