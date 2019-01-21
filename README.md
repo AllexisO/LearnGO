@@ -34,7 +34,10 @@ package main
 inport "fmt"  -> file scoped (only visible in this file)
 
 const ok = true -> package scoped (visible to all the files belong to the package). Other packages can't see then.
-func main () {-> 
+func main () {
+    var hello = "Hello!" --> block scoped declaration. Only visible after its declaration until "}"
+    fmt.Println(hello, ok)
+    }
 ```
 *Declorations*
 Declares a unique name bound to a scope.
